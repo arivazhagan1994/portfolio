@@ -1,11 +1,64 @@
 body {
-    background: lightblue;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.hero {
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero {
-    height: 100vh;
-    background: wheat;
-    color: #000;
+.hero-content {
+    max-width: 800px;
     text-align: center;
-    padding-top: 200px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: #22c55e;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #22c55e;
+    border: none;
+    color: #0f172a;
+    cursor: pointer;
+}
+
+#about {
+    padding: 60px;
+    background: #f8fafc;
+}
+
+#skills {
+    padding: 60px;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#contact {
+  background: #0f172a;
+  color: white;
+  padding: 60px;
+  text-align: center;
 }
