@@ -1,3 +1,11 @@
 body {
     background: lightblue;
 }
+
+.hero {
+    height: 100vh;
+    background: wheat;
+    color: #000;
+    text-align: center;
+    padding-top: 200px;
+}
