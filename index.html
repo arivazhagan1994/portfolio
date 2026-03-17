@@ -7,58 +7,684 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navdiv">
-            <ui>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">About</a></li>
-            </ui>
-        </div>
-    </nav>
+    <!-- ===== Header / Navbar ===== -->
+    <header class="header">
+        <nav class="navbar">
 
+            <!-- Logo / Name -->
+            <div class="logo">
+                <h2 class="logo-text">Arivazhagan <span>M</span></h2>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Overview</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Career</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Connect</a>
+                </li>
+
+                <!-- Dark Mode Button -->
+                <li class="nav-item">
+                    <button class="theme-toggle">
+                        🌙
+                    </button>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+<!-- ===== Hero Section ===== -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Arivazhagan M</h1>
-            <h2>AI & Sustainability Data Dashboard Developer</h2>
-            <p class="hero-sub">
-            8+ years of power plant and steel industry experience,
-            building data-driven solutions for energy, emissions,
-            and operational performance.
-            </p>
-            <p class="hero-tagline">
-            From plant floor to dashboards — I turn operational
-            and GHG data into clear, actionable insights.
-            </p>
-            <button class="hero-btn">VIEW PROJECTS</button>
+
+        <div class="hero-container">
+
+            <!-- Left Content -->
+            <div class="hero-content">
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="hero-name">Arivazhagan <span>M</span></span>
+                </h1>
+
+                <h2 class="hero-role">
+                    Full Stack Developer
+                </h2>
+
+                <p class="hero-description">
+                    I build responsive web applications and love solving real-world
+                    problems using code. Currently seeking an entry-level
+                    Software Developer / Full Stack Developer role.
+                </p>
+
+                <!-- Buttons -->
+                <div class="hero-buttons">
+
+                    <a href="#" class="btn btn-primary">
+                        Download Resume
+                    </a>
+
+                    <a href="#projects" class="btn btn-outline">
+                        View Projects
+                    </a>
+
+                </div>
+
+                <!-- Social Icons -->
+                <div class="hero-social">
+
+                    <a href="#" class="social-icon">GitHub</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Image -->
+            <div class="hero-image">
+
+                <img src="images/profile.png" class="profile-img">
+
+                <div class="code-icon">
+                    &lt;/&gt;
+                </div>
+
+            </div>
+
         </div>
+
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I build AI applications and systems that solve real-world problems.</p>
+    <!-- ===== About Section ===== -->
+    <section class="about">
+
+        <div class="about-container">
+
+            <!-- Section Title -->
+            <div class="about-header">
+                <h2 class="about-title">
+                    About <span class="highlight">Me</span>
+                </h2>
+            </div>
+
+            <div class="about-content">
+
+                <!-- Left Image -->
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Arivazhagan" class="about-img">
+                </div>
+
+                <!-- Right Content -->
+                <div class="about-text">
+
+                    <p class="about-description">
+                        I am a <span class="highlight">BE CSE graduate</span> with strong programming,
+                        web development, and problem-solving skills.
+                    </p>
+
+                    <p class="about-description">
+                        I build practical projects to apply my knowledge in real-world
+                        scenarios. My passion lies in creating efficient, scalable
+                        solutions that make a difference.
+                    </p>
+
+                    <p class="about-description">
+                        I am eager to contribute to meaningful software solutions and
+                        grow as a developer in a collaborative team environment.
+                    </p>
+
+                    <!-- Stats -->
+                    <div class="about-stats">
+
+                        <div class="stat-card">
+                            <h3 class="stat-number">200+</h3>
+                            <p class="stat-text">Problems Solved</p>
+                        </div>
+
+                        <div class="stat-card">
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-text">Projects Built</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ui>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Natural Language Processing</li>
-            <li>Flutter</li>
-            <li>Streamlit</li>
-        </ui>
+    <!-- ===== Skills Section ===== -->
+    <section class="skills">
+
+        <div class="skills-container">
+
+            <!-- Section Title -->
+            <div class="skills-header">
+                <h2 class="skills-title">My <span class="highlight">Skills</span></h2>
+                <p class="skills-subtitle">
+                    A comprehensive overview of my technical expertise and proficiency levels
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid">
+
+                <!-- Programming -->
+                <div class="skill-card">
+                    <h3 class="skill-category">Programming</h3>
+
+                    <div class="skill-item">
+                        <span class="skill-name">C</span>
+                        <span class="skill-percent">85%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-percent">80%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percent">85%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">80%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">90%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+                </div>
+
+
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <h3 class="skill-category">Frontend</h3>
+
+                    <div class="skill-item">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percent">95%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percent">90%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">90%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">React</span>
+                        <span class="skill-percent">85%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+                </div>
+
+
+                <!-- Backend -->
+                <div class="skill-card">
+                    <h3 class="skill-category">Backend</h3>
+
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-percent">80%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">Express.js</span>
+                        <span class="skill-percent">85%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">REST APIs</span>
+                        <span class="skill-percent">85%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+                </div>
+
+
+                <!-- Database -->
+                <div class="skill-card">
+                    <h3 class="skill-category">Database</h3>
+
+                    <div class="skill-item">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-percent">80%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">MongoDB</span>
+                        <span class="skill-percent">85%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+                </div>
+
+
+                <!-- Tools -->
+                <div class="skill-card">
+                    <h3 class="skill-category">Tools & Concepts</h3>
+
+                    <div class="skill-item">
+                        <span class="skill-name">Git</span>
+                        <span class="skill-percent">85%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">GitHub</span>
+                        <span class="skill-percent">90%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">DSA</span>
+                        <span class="skill-percent">80%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">OOP</span>
+                        <span class="skill-percent">85%</span>
+                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">Loan Prediction Dashboard</div>
+    <!-- ===== Projects Section ===== -->
+    <section class="projects">
+
+        <div class="projects-container">
+
+            <!-- Section Header -->
+            <div class="projects-header">
+                <h2 class="projects-title">My <span class="highlight">Work</span></h2>
+                <p class="projects-subtitle">
+                    A showcase of some of the projects I have built
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Project 1" class="project-img">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">AI Data Analysis Dashboard</h3>
+
+                        <p class="project-description">
+                            A data analytics dashboard built using Python,
+                            Pandas, and visualization libraries to analyze
+                            business datasets.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-btn">Live Demo</a>
+                            <a href="#" class="project-btn">GitHub</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Project 2" class="project-img">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">Loan Risk Prediction</h3>
+
+                        <p class="project-description">
+                            Machine learning model to predict loan risk
+                            using classification algorithms and financial data.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-btn">Live Demo</a>
+                            <a href="#" class="project-btn">GitHub</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Project 3" class="project-img">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">Energy Sustainability Dashboard</h3>
+
+                        <p class="project-description">
+                            Dashboard to track GHG emissions, energy
+                            consumption and sustainability metrics.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Dash</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-btn">Live Demo</a>
+                            <a href="#" class="project-btn">GitHub</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>arivazhaganmathi1994@gmail.com</p>
+    <!-- ===== Resume Section ===== -->
+    <section class="resume">
+
+        <div class="resume-container">
+
+            <!-- Icon -->
+            <div class="resume-icon">
+                <span class="resume-icon-symbol">📄</span>
+            </div>
+
+            <!-- Title -->
+            <div class="resume-header">
+                <h2 class="resume-title">My <span class="highlight">Resume</span></h2>
+                <p class="resume-description">
+                    Download my resume to know more about my education, skills,
+                    and projects. It includes detailed information about my
+                    technical expertise and academic achievements.
+                </p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="resume-buttons">
+
+                <a href="#" class="btn btn-primary">
+                    Download Resume
+                </a>
+
+                <a href="#" class="btn btn-outline">
+                    View Online
+                </a>
+
+            </div>
+
+            <!-- Resume Stats -->
+            <div class="resume-stats">
+
+                <div class="resume-card">
+                    <h3 class="resume-number">BE CSE</h3>
+                    <p class="resume-text">Computer Science Engineering</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3 class="resume-number">10+</h3>
+                    <p class="resume-text">Technical Skills</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3 class="resume-number">4+</h3>
+                    <p class="resume-text">Major Projects</p>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
-    
+
+    <!-- ===== Achievements Section ===== -->
+    <section class="achievements">
+
+        <div class="achievements-container">
+
+            <!-- Section Title -->
+            <div class="achievements-header">
+                <h2 class="achievements-title">
+                    Achievements & <span class="highlight">Certifications</span>
+                </h2>
+
+                <p class="achievements-subtitle">
+                    Milestones and certifications that showcase my dedication
+                    to continuous learning
+                </p>
+            </div>
+
+            <!-- Achievements Grid -->
+            <div class="achievements-grid">
+
+                <!-- Achievement 1 -->
+                <div class="achievement-card">
+                    <h3 class="achievement-title">200+ Problems Solved</h3>
+
+                    <p class="achievement-description">
+                        Successfully solved over 200 coding problems on platforms
+                        like LeetCode and CodeChef.
+                    </p>
+                </div>
+
+
+                <!-- Achievement 2 -->
+                <div class="achievement-card">
+                    <h3 class="achievement-title">Full Stack Certification</h3>
+
+                    <p class="achievement-description">
+                        Completed comprehensive Full Stack Web Development course
+                        with hands-on projects.
+                    </p>
+                </div>
+
+
+                <!-- Achievement 3 -->
+                <div class="achievement-card">
+                    <h3 class="achievement-title">Hackathon Participant</h3>
+
+                    <p class="achievement-description">
+                        Participated in college-level hackathons, collaborating
+                        on innovative solutions.
+                    </p>
+                </div>
+
+
+                <!-- Achievement 4 -->
+                <div class="achievement-card">
+                    <h3 class="achievement-title">AWS Certified</h3>
+
+                    <p class="achievement-description">
+                        Earned AWS and Coursera certifications in cloud computing
+                        and web technologies.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="contact">
+
+        <div class="contact-container">
+
+            <!-- Section Header -->
+            <div class="contact-header">
+                <h2 class="contact-title">
+                    Get In <span class="highlight">Touch</span>
+                </h2>
+
+                <p class="contact-subtitle">
+                    Interested in working together or have an opportunity for me?
+                    Feel free to reach out.
+                </p>
+            </div>
+
+            <!-- Contact Info Cards -->
+            <div class="contact-info">
+
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-label">Email</h3>
+                    <p class="contact-value">arjun.kumar@example.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-label">Phone</h3>
+                    <p class="contact-value">+91 98765 43210</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🔗</div>
+                    <h3 class="contact-label">LinkedIn</h3>
+                    <p class="contact-value">linkedin.com/in/arjunkumar</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🐙</div>
+                    <h3 class="contact-label">GitHub</h3>
+                    <p class="contact-value">github.com/arjunkumar</p>
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+
+                <h3 class="form-title">Send a Message</h3>
+                <p class="form-subtitle">Let's start a conversation</p>
+
+                <form class="contact-form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-input" placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Your Email</label>
+                            <input type="email" class="form-input" placeholder="john@example.com">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Your Message</label>
+                        <textarea class="form-textarea" placeholder="Tell me about your project or opportunity..."></textarea>
+                    </div>
+
+                    <button class="form-button">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-text">
+                <p>
+                    © 2026 Arivazhagan | Built with ❤️ using React,
+                    Tailwind CSS & Motion
+                </p>
+            </div>
+
+            <div class="footer-social">
+
+                <a href="#" class="footer-icon">GitHub</a>
+                <a href="#" class="footer-icon">LinkedIn</a>
+                <a href="#" class="footer-icon">Email</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
 </body>
 </html>
