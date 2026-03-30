@@ -238,21 +238,10 @@ body {
 }
 
 .profile-img {
-    width: 280px;
-    border-radius: 50%;
-}
-
-/* Code Icon */
-.code-icon {
-    position: absolute;
-    bottom: 20px;
-    right: 60px;
-
-    background: #2563eb;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: bold;
+    animation: float 4s ease-in-out infinite;
+    width: 300px;
+    margin-top: 20px;
+    height: 100;
 }
 
 @media (max-width: 768px) {
