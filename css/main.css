@@ -332,6 +332,14 @@ body {
     color: #2563eb;
 }
 
+
+.highlight {
+    color: rgb(82, 156, 226);
+}
+.section-subtitle {
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
 
     .about-card {
@@ -341,4 +349,17 @@ body {
     .about-right {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+/* ===== Skills Section ===== */
+
+.skills {
+    padding: 80px 20px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
 }
