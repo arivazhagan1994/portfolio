@@ -60,5 +60,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     typeEffect();
+    initSkillBars();
+
+    function initSkillBars() {
+    const skillItems = document.querySelectorAll(".skill-item");
+
+    skillItems.forEach(item => {
+        const percent = item.querySelector(".skill-percent").textContent;
+        const progressBar = item.querySelector(".skill-progress");
+
+        progressBar.style.width = percent;
+    });
+}
 
 });
