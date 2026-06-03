@@ -73,4 +73,102 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 }
 
+// Card Animation
+
+const cards = document.querySelectorAll(".skill-card");
+
+const cardObserver = new IntersectionObserver(
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+const progressBars =
+entry.target.querySelectorAll(".skill-progress");
+
+progressBars.forEach(bar=>{
+
+const percent =
+bar.parentElement.previousElementSibling.textContent;
+
+bar.style.width = percent;
+
+});
+
+}
+
+});
+
+},
+{
+threshold:0.2
+}
+);
+
+cards.forEach(card=>{
+cardObserver.observe(card);
+});
+
+// ===== PROJECT REVEAL ANIMATION =====
+
+const projectCards = document.querySelectorAll(".project-card");
+
+const projectObserver = new IntersectionObserver(
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+    entry.target.classList.add("show");
+}
+
+});
+
+},
+{
+threshold:0.15
+}
+);
+
+projectCards.forEach(card=>{
+projectObserver.observe(card);
+});
+
+// ===== OPTIONAL: CLICK ENTIRE CARD =====
+projectCards.forEach(card=>{
+card.addEventListener("click",()=>{
+    const link = card.querySelector(".live-btn");
+    if(link) window.open(link.href, "_blank");
+});
+});
+
+
+// ===== RESUME CARD ANIMATION =====
+
+const resumeCards = document.querySelectorAll(".resume-card");
+
+const resumeObserver = new IntersectionObserver(
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+    entry.target.classList.add("show");
+}
+
+});
+
+},
+{
+threshold:0.2
+}
+);
+
+resumeCards.forEach(card=>{
+resumeObserver.observe(card);
+});
+
 });
