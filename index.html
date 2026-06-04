@@ -706,25 +706,25 @@
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h3 class="contact-label">Email</h3>
-                    <p class="contact-value">arjun.kumar@example.com</p>
+                    <p class="contact-value">arivazhaganmathi1994@gmail.com</p>
                 </div>
 
                 <div class="contact-card">
                     <div class="contact-icon">📞</div>
                     <h3 class="contact-label">Phone</h3>
-                    <p class="contact-value">+91 98765 43210</p>
+                    <p class="contact-value">+91 9080382001</p>
                 </div>
 
                 <div class="contact-card">
                     <div class="contact-icon">🔗</div>
                     <h3 class="contact-label">LinkedIn</h3>
-                    <p class="contact-value">linkedin.com/in/arjunkumar</p>
+                    <p class="contact-value">linkedin.com/in/arivazhaganmathi</p>
                 </div>
 
                 <div class="contact-card">
                     <div class="contact-icon">🐙</div>
                     <h3 class="contact-label">GitHub</h3>
-                    <p class="contact-value">github.com/arjunkumar</p>
+                    <p class="contact-value">https://github.com/arivazhagan1994</p>
                 </div>
 
             </div>
@@ -741,22 +741,22 @@
 
                         <div class="form-group">
                             <label class="form-label">Your Name</label>
-                            <input type="text" class="form-input" placeholder="John Doe">
+                            <input type="text" id="name" class="form-input" placeholder="John Doe">
                         </div>
 
                         <div class="form-group">
                             <label class="form-label">Your Email</label>
-                            <input type="email" class="form-input" placeholder="john@example.com">
+                            <input type="email" id="email" class="form-input" placeholder="john@example.com">
                         </div>
 
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Your Message</label>
-                        <textarea class="form-textarea" placeholder="Tell me about your project or opportunity..."></textarea>
+                        <textarea id="message" class="form-textarea" placeholder="Tell me about your project or opportunity..."></textarea>
                     </div>
 
-                    <button class="form-button">
+                    <button type="button" class="form-button" onclick="sendWhatsApp()">
                         Send Message
                     </button>
 
@@ -769,28 +769,87 @@
     </section>
 
     <!-- ===== Footer ===== -->
-    <footer class="footer">
+    <!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-        <div class="footer-container">
+<footer class="footer">
 
-            <div class="footer-text">
-                <p>
-                    © 2026 Arivazhagan | Built with ❤️ using React,
-                    Tailwind CSS & Motion
-                </p>
-            </div>
+    <div class="footer-container">
 
-            <div class="footer-social">
+        <!-- Logo / Name -->
+        <div class="footer-brand">
 
-                <a href="#" class="footer-icon">GitHub</a>
-                <a href="#" class="footer-icon">LinkedIn</a>
-                <a href="#" class="footer-icon">Email</a>
+            <h2>
+                Ariva<span>zhagan</span>
+            </h2>
+
+            <p>
+                Full Stack Developer passionate about building
+                modern, scalable, and user-friendly web applications.
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-social">
+
+            <h3>Connect</h3>
+
+            <div class="social-icons">
+
+                <a href="https://github.com/arivazhagan1994"
+                    target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/yourusername"
+                    target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="mailto:yourmail@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="https://wa.me/919876543210"
+                    target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
 
             </div>
 
         </div>
 
-    </footer>
+    </div>
+
+    <!-- Bottom Footer -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Arivazhagan. All Rights Reserved.
+        </p>
+
+        <button id="topBtn">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+    </div>
+
+</footer>
 
     <script src="js/script.js"></script>
 </body>
